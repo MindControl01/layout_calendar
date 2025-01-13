@@ -1,3 +1,42 @@
 body {
   margin: 0;
+
+}
+
+.calendar {
+
+}
+
+.calendar__number-of-day {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 7;
+  gap: 1px;
+  background-color: #eee;
+
+}
+
+.calendar__num {
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+
+$sizes: 30px;
+
+@each $size in $sizes {
+  .icon-#{$size}::before {
+    display: inline-block;
+    font-family: "Arial";
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}
+
+@for $row from 1 through 31 {
+
 }
